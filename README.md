@@ -13,8 +13,8 @@ Developers that are looking to find paids gigs more convinenetly.
 
 ## Wireframe
 ##### This shows both the overall look as well as some of the logIn component
-![Overview](images/overview.jpg)
-![User Authentication](images/oauth.jpg)
+![Overview](images/overview.JPG)
+![User Authentication](images/oauth.JPG)
 
 
 * Overview:
