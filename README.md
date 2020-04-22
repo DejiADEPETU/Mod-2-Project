@@ -2,33 +2,35 @@
 Project2/Perscholas
 
 ## Which 3rd party API I'm using:
-https://developers.freelancer.com/docs/api-overview/making-a-request
+api.repo.nypl.org/
 
 
 
 ## Problem statement:
-Cobosh: A app that finds gigs for devs in their areas of interest. 
+### fibn: Find Inspiring Books Now. 
+- An app that finds inspiring books for readers in their area(s) of interest form the collections at the Newyork Public Library. 
 
 ## Target users:
-Developers that are looking to find paids gigs more convinenetly.
+Avid readers and discerning buyers.
 
 ## Wireframe
 ##### This shows both the overall look as well as some of the logIn component
-![Overview](images/overview.JPG)
-![User Authentication](images/oauth.JPG)
+![IntroPage](images/fibn_intro.PNG)
+![Overview](images/fibn_singlePagewebAppOverview.PNG)
 
 
 * Overview:
 - Stateful Components:
     - (a) App.js [Populates components to the DOM]
-    - (b) User Authentication
-    - (c) QuorumJobs Board [fetched from serve]
-    - (d) Jobs Board [fetched from serve]
+    - (b) Book Search based on deired criteria [fetched from server]
+    
 
 
 - Functional Component:
     - (a) confirmation box/lightboxes/modal
-    - (b) confirmation box/lightboxes/modal
-    - (c) confirmation box/lightboxes/modal
-    - (d) Group Bios [Presentaional]
-    - (e) Job Selections [Presentaional]
+    - (b) archieve of Searches
+
+- *** FUTURE WORK  ***
+    - (a) User Authentication   
+    - (b) User Profiles [form USERS data]
+    - (c) Book Recommendations Based on Past User Behaviour
