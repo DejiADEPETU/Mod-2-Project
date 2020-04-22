@@ -14,21 +14,28 @@ api.repo.nypl.org/
 Avid readers and discerning buyers.
 
 ## Wireframe
-##### This shows both the overall look as well as some of the logIn component
+
+##### This shows both the overall look as well as some of the intro page
+
+##### Welcome Screen  [Also Doubles as the search/input screen]
 ![IntroPage](images/fibn_intro.PNG)
+
+##### This shows both the overall look of a since paged Web-App (with a minimun of 5 components) populated via an api fetching data from a server
 ![Overview](images/fibn_singlePagewebAppOverview.PNG)
 
 
-* Overview:
+* Component Breakdown:
 - Stateful Components:
     - (a) App.js [Populates components to the DOM]
     - (b) Book Search based on deired criteria [fetched from server]
+    - (c) Genre comparisims of "Users-Selected" Titles against the ones from the Api
     
 
 
 - Functional Component:
     - (a) confirmation box/lightboxes/modal
     - (b) archieve of Searches
+    - (c) Genre comparisims of "Users-Selected" Titles against the ones from the Redux
 
 - *** FUTURE WORK  ***
     - (a) User Authentication   
