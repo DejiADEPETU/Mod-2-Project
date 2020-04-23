@@ -28,17 +28,16 @@ Avid readers and discerning buyers.
 - Stateful Components:
     - (a) App.js [Populates components to the DOM]
     - (b) Book Search based on deired criteria [fetched from server]
+    - (c) Genre comparisims of "Users-Selected" Titles against the ones from the Api
     
 
 
 - Functional Component:
     - (a) confirmation box/lightboxes/modal
-    - (b) Link introPage to main page
-    
+    - (b) archieve of Searches
+    - (c) Genre comparisims of "Users-Selected" Titles against the ones from the Redux
 
 - *** FUTURE WORK  ***
     - (a) User Authentication   
-    - (b) Book Recommendations Based on Past User Behaviour
-    - (c) Genre comparisims of "Users-Selected" Titles against the ones from the Api
-    - (d) Archieved Resipotary of Previous finnds
-
+    - (b) User Profiles [form USERS data]
+    - (c) Book Recommendations Based on Past User Behaviour
