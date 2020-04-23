@@ -9,7 +9,7 @@ import axios from 'axios';
 class App extends Component{
   render() {
     return (
-      <React.Fragment>
+      // <React.Fragment>
       <Router>
         <div className="App">
           <div className="container">
@@ -24,8 +24,9 @@ class App extends Component{
             <Route path="/search" components={SearchBox}/>
           </div>
         </div>
+        {/* <SearchBox/> */}
       </Router>
-      </React.Fragment>
+      {/* </React.Fragment> */}
     );
   } 
 }
