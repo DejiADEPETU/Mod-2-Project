@@ -9,6 +9,7 @@ import axios from 'axios';
 class App extends Component{
   render() {
     return (
+      <React.Fragment>
       <Router>
         <div className="App">
           <div className="container">
@@ -24,6 +25,7 @@ class App extends Component{
           </div>
         </div>
       </Router>
+      </React.Fragment>
     );
   } 
 }
