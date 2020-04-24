@@ -4,11 +4,11 @@ class AutoTextBox extends React.Component{
     constructor (props){
         super(props);
         this.items=[
-            'kyulk snyt',
+            'kyulknyt',
             'SFtnyt',
             'wagrnyt',
             'y8ott',
-            'BXWFf 6 snyt',
+            'BXWFfsnyt',
             'sdgdsnyt'
         ];
       
@@ -40,11 +40,10 @@ class AutoTextBox extends React.Component{
 
     }
 
-
     render(){
         return(
             <div className ="AutoTextBox">
-                <input onChange={this.OnTextChanged} type="text" placeholder="be inspired: search here   " name="uName" required/>
+                <input onChange={this.OnTextChanged} type="text" placeholder="be inspired: search here   "/>
                 {this.renderSuggestions()}
             </div>
         );
