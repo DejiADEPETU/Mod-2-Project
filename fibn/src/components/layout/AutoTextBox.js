@@ -63,7 +63,8 @@ class AutoTextBox extends React.Component{
 };
        
 
-const portableAutoTextStyle = {
+const portableAutoTextStyle = {   //The AutoTextBox  is styled here (and not in SASS) in order to maintain portability & reuseability of the AutoTextBoxComponent
+    
 /*    background: '#ff0000',
     color: '#fff',
     border: 'none',
