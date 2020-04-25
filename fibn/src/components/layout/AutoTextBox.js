@@ -9,7 +9,7 @@ class AutoTextBox extends React.Component{
             'wagrnyt',
             'y8ott',
             'BXWFfsnyt',
-            'sdgdsnyt'
+            'sdgdsnyt',
         ];
       
         this.state={
@@ -22,7 +22,7 @@ class AutoTextBox extends React.Component{
         const value = e.target.value;
         let suggestions = [];
         if (value.length > 0){
-            const regex = new RegExp(`^${value}`,'i');
+            const regex = new RegExp(`^${value}`, 'i');
             suggestions = this.items.sort().filter(v=>regex.test(v));
         }
         this.setState(()=> ({suggestions, text:value}));
@@ -39,7 +39,7 @@ class AutoTextBox extends React.Component{
 
     
 
-    renderSugeestions(){
+    renderSuggestions(){
         const{suggestions}=this.state;
         if (suggestions.length === 0){
             return null;
@@ -55,11 +55,25 @@ class AutoTextBox extends React.Component{
         const {text} = this.state;
         return(
             <div className ="AutoTextBox">
-                <input value={text} onChange={this.OnTextChanged} type="text" placeholder="be inspired: search here"/>
+                <input value={text} onChange={this.OnTextChanged} type="text" placeholder="   be inspired: search here   " style={portableAutoTextStyle}/>
                 {this.renderSuggestions()}
             </div>
         );
     };
 };
        
+
+const portableAutoTextStyle = {
+/*    background: '#ff0000',
+    color: '#fff',
+    border: 'none',
+    padding: '5px 8px',
+    borderRadius: '50%',
+    cursor: 'pointer',
+    float: 'right'*/
+}
+
+
+
+
 export default AutoTextBox;
