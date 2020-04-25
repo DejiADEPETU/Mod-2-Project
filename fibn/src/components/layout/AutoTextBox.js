@@ -51,7 +51,7 @@ class AutoTextBox extends React.Component{
         const {text} = this.state;
         return(
             <div className ="AutoTextBox">
-                <input value={text} onChange={this.OnTextChanged} type="text" placeholder=" be inspired: search here   " style={portableAutoTextStyle}/>
+                <input defaultValue={text} onChange={this.OnTextChanged} type="text" placeholder=" be inspired: search here   " style={portableAutoTextStyle}/>
                 {this.renderSuggestions()}
             </div>
         );
@@ -64,7 +64,6 @@ const portableAutoTextStyle = {   //The AutoTextBox  is styled here (and not in 
     background: 'lightgrey',
     border: 'dash',
     padding: '5px 15% 8px 10% ',
-    // cursor: 'pointer',
     float: 'center'
 }
 
