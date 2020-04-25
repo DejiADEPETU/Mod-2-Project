@@ -19,9 +19,13 @@ class App extends Component{
           </div>
           <AutoTextBox/>
           <LightBox/>
-          <sameOrigins/> { /* An  index of works from the same source: e.g. Author = Origin */}
-          <sameCategories/>  { /* An  index of similar works. e.g Volumes on the same Topic */}
-          {/* <NavBar/> */}
+          {
+           
+          //<sameOrigins/> { /* An  index of works from the same source: e.g. Author = Origin */}
+          //<sameCategories/>  { /* An  index of similar works. e.g Volumes on the same Topic */}
+          //<NavBar/> 
+          
+          }
         </div>
       </Router>
       // {/* </React.Fragment> */}
