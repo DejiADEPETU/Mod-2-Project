@@ -4,7 +4,12 @@ export default function searchResult(props) {
     console.log(props.arrayofResult, "from inside of searchResult component")
     return (
         <div>
-            {/* <h2>serchResult Component:  SearchResult arrayofResult={this.state.aipResponse</h2> */}
+            {
+
+                props.arrayofResult.map(result => console.log(result))
+
+
+            }
         </div>
     )
 }
