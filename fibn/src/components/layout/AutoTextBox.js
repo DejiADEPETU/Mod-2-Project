@@ -23,39 +23,35 @@ class AutoTextBox extends React.Component{
         let suggestions = [];
         if (value.length > 0){
             const regex = new RegExp(`^${value}`, 'i');
-            suggestions = this.items.sort().filter(v=>regex.test(v));
+            suggestions = this.items.sort().filter(v => regex.test(v));
         }
-        this.setState(()=> ({suggestions, text:value}));
+        this.setState(()=> ({suggestions, text: value}));
     }
 
     suggestionSelected (value) {
         this.setState(()=>({
-            text:value,
+            text: value,
             suggestions: [],
         }))
     }
 
 
-
-    
-
     renderSuggestions(){
         const{suggestions}=this.state;
-        if (suggestions.length === 0){
+        if (suggestions.length ===0){
             return null;
         }
         return(
             <ul>
-                {suggestions.map((item) => <li onClick={()=>this.suggestionSelected(item)}> {item}</li>)}
+                {suggestions.map((item) => <li>{item}</li>)}
             </ul>
         );
     }
 
     render(){
-        const {text} = this.state;
         return(
             <div className ="AutoTextBox">
-                <input value={text} onChange={this.OnTextChanged} type="text" placeholder="   be inspired: search here   " style={portableAutoTextStyle}/>
+                <input onChange={this.OnTextChanged} type="text" placeholder="   be inspired: search here   " style={portableAutoTextStyle}/>
                 {this.renderSuggestions()}
             </div>
         );
@@ -64,7 +60,7 @@ class AutoTextBox extends React.Component{
        
 
 const portableAutoTextStyle = {   //The AutoTextBox  is styled here (and not in SASS) in order to maintain portability & reuseability of the AutoTextBoxComponent
-    
+
 /*    background: '#ff0000',
     color: '#fff',
     border: 'none',
