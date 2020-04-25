@@ -16,7 +16,7 @@ class SearcResults extends React.Component{
     
     async componentDidMount(){
         try {
-            const res = await axios.get(`http://api.repo.nypl.org/api/v1/items/search?q=birds`);
+            const res = await axios.get(`http://dev.adepetu:fibn@Api@api.repo.nypl.org/api/v1/items/search?q=cats&publicDomainOnly=true`);
             console.log(res.data, "API response");
             this.setState({apiResponse: res.data});
         } catch(e) {
@@ -30,7 +30,9 @@ class SearcResults extends React.Component{
           <div className="searchResults">
 
                                         {console.log("this component caonnect with the NYPL api via axios"</h1>}
-                    <SearchResult arrayofResult={this.state.aipResponse /* This is an Array containing object of searchResults stored in state gotten the the NYPL api*/}
+                    <SearchResult arrayofResult={this.state.aipResponse /* This is an Array containing object of searchResults stored in state gotten the the NYPL api*/}/>
+                    
+
 
           </div>
       </React.Fragment>
